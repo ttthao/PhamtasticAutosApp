@@ -1,0 +1,181 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.dwight.phamtasticautos4.AddTable"
+    android:background="#3350A5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/promptText"
+        android:layout_centerHorizontal="true"
+        android:text="Prompts Here"
+        android:layout_marginTop="15dp"
+        android:textColor="#FFFF" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputField"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/promptText"
+        android:layout_marginTop="15dp"
+        android:width="300dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submitButton"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/inputField"
+        android:layout_marginTop="15dp"
+        android:text="Submit"
+        android:onClick="submitButtonClicked" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/dbDisplay"
+        android:text="Database Information Here"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/submitButton"
+        android:textColor="#FFFF" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Local:"
+        android:id="@+id/localData"
+        android:layout_above="@+id/dateData"
+        android:layout_alignParentLeft="true"
+        android:textColor="#FFFF"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Date:"
+        android:id="@+id/dateData"
+        android:layout_above="@+id/unitNumData"
+        android:layout_alignParentLeft="true"
+        android:textColor="#FFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Unit #:"
+        android:id="@+id/unitNumData"
+        android:layout_above="@+id/vinNumData"
+        android:layout_alignParentLeft="true"
+        android:textColor="#FFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Vin #:"
+        android:id="@+id/vinNumData"
+        android:layout_above="@+id/licenseNumData"
+        android:layout_alignParentLeft="true"
+        android:textColor="#FFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="License #:"
+        android:id="@+id/licenseNumData"
+        android:layout_above="@+id/mileageData"
+        android:layout_alignParentLeft="true"
+        android:textColor="#FFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Mileage:"
+        android:id="@+id/mileageData"
+        android:layout_above="@+id/codeData"
+        android:layout_alignParentLeft="true"
+        android:textColor="#FFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Code/claim #:"
+        android:id="@+id/codeData"
+        android:layout_above="@+id/yearData"
+        android:layout_alignParentLeft="true"
+        android:textColor="#FFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Year:"
+        android:id="@+id/yearData"
+        android:layout_above="@+id/makeData"
+        android:layout_alignParentLeft="true"
+        android:textColor="#FFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Make:"
+        android:id="@+id/makeData"
+        android:layout_above="@+id/modelData"
+        android:layout_alignParentLeft="true"
+        android:textColor="#FFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Model:"
+        android:id="@+id/modelData"
+        android:layout_above="@+id/colorData"
+        android:layout_alignParentLeft="true"
+        android:textColor="#FFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Color:"
+        android:id="@+id/colorData"
+        android:layout_above="@+id/workData"
+        android:layout_alignParentLeft="true"
+        android:textColor="#FFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Work Done:"
+        android:id="@+id/workData"
+        android:layout_above="@+id/priceData"
+        android:layout_alignParentLeft="true"
+        android:textColor="#FFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Price:"
+        android:id="@+id/priceData"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="#FFFF" />
+
+</RelativeLayout>

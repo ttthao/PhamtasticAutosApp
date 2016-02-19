@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">PhamtasticAutos4</string>
+
+    <string name="companyHeader">Phamtastic Autos</string>
+    <string name="passwordPrompt">Password:</string>
+    <string name="emailPrompt">Email:</string>
+    <string name="loginButton">Login</string>
+    <string name="mainMenuText">Main Menu</string>
+    <string name="title_activity_menu">menu</string>
+    <string name="title_activity_main_menu">MainMenu</string>
+    <string name="title_activity_gather">Gather</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_the_real_deal">theRealDeal</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_add_table">AddTable</string>
+    <string name="title_activity_export_to_csv">exportToCSV</string>
+</resources>
